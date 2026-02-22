@@ -1,10 +1,5 @@
-import { View } from "react-native";
-import Header from "./components/header";
+import { Redirect } from "expo-router";
 
 export default function Index() {
-  return (
-    <View style={{ flex: 4, padding: 16 }}>
-      <Header />
-    </View>
-  );
+  return <Redirect href="/(tabs)/home" />;
 }
